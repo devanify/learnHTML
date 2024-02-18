@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribut Name</title>
+</head>
+<body>
+    <h1>FORM DENGAN NAME ATRIBUTE</h1>
+   <form action="/daftar" method="get">
+    <div>
+        <label for="name">NAMA LENGKAP</label>
+        <input type="text" placeholder="Nama" id="name" name="nama">
+    </div>
+    <div>
+        <label for="email">E-Mail</label>
+        <input type="email" placeholder="EMAIL" id="email" name="email">
+    </div>
+    <button type="submit">KIRIM</button>
+   </form>
+   <hr>
+   <h1>FORM RADIO</h1>
+   <form action="/order">
+        <label for="">Baju</label>
+        <br>
+        <!-- Agar form radio di klik satu maka name="" diseting sama dan untuk setiap pilihan wajib diisikan value="" secara manual -->
+        <!-- checked disii akan membuat form radio diisi otomatis saat membuka halaman , contohnya saat merefres halaman ini maka otomatis kaos akan di ceklis karena terdapat atribut cheked pada inpitannya-->
+        <div>
+            <input type="radio" name="baju" id="" value="Kemeja"> <label for="">Kemeja</label>
+            <input type="radio" name="baju" id="" value="Kaos" checked> <label for="">Kaos</label>
+        </div>
+        <button type="submit">Order</button>
+        <br>
+    </form>
+
+    <h1>Select Atau Dropdown</h1>
+    <form action="/pilih">
+        <select name="pets" id="pets-selected">
+            <!-- AGAR OTOMATIS TERPILIH SAAT MEMBUKA BISA ISI OPTION selected pada option , ini sama seperti cheked pada form radio-->
+            <option selected>Silahkan Dipilih</option>
+            <option value="dog">Anjing</option>
+            <option value="cat">Kucing</option>
+            <option value="lion">Singa</option>
+        </select>
+        <button type="submit">Pilih</button>
+    </form>
+    <hr>
+    <br>
+    <h1>Checkbox</h1>
+    <form action="/term">
+        <div>
+            <!-- option checked sama seperti selected  -->
+            <label for="term">Saya Setuju dengan persyaratn tersebut !</label>
+            <input type="checkbox" name="term" id="term" value="Setuju" checked>
+        </div>
+        <button type="submit">Pilih</button>
+    </form>
+    <hr>
+    <br>
+    <h1>Text Area</h1>
+    <form action="/notes">
+        <div>
+            <label for="notes">Masukan dan Saran</label> <br>
+            <textarea name="masukan" id="" cols="50" rows="10"></textarea>
+        </div>
+        <button type="submit">Kirim</button>
+    </form>
+    <hr>
+    <br>
+    <h1>Validasi</h1>
+    <form action="/valid">
+        <div>
+            <label for="nama">NAMA</label>
+            <input type="text" name="nama" id="" required minlength="10" maxlength="20">
+        </div>
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>

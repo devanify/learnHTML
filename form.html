@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <h1>FORM ELEMENT</h1>
+    <p><b>< FROM ></b> adalah elemnt untuk membungkus jenis isian dan tidak memberikan efek tampilan apapun</p>
+    <p>Isi dari formulir bisa berupa input, checkbok, tombol , dll</p>
+    <h3>form</h3>
+    <ul>
+        <li>Form digambarkan sebagai dokumen yang memiliki informasi yang perlu dikirim</li>
+        <li>action adlaah atribut untuk menentukan alamat kemana formulir dikirim</li>
+        <li> method adalah atribut bagiaman data ini dikirim melalui HTTP
+        </li>   
+    </ul>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">DOCUMENTATION INPUT</a></p>
+    <!-- pembatas -->
+    <h2>contoh inputan form</h2>
+    <form action="#" method="post">
+       <!-- didefinisikan sebagai tombol biasa sehingga tidak akan terjadi apa apa jika di klik -->
+        <button type="button">TOMBOL BIASA</button>
+        <!-- antara for="" pada label berhubungan dengan id="" pada inputan -->
+        <div>
+            <label for="name">NAMA LENGKAP</label>
+            <input type="text" placeholder="Nama" id="name">
+        </div>
+        <div>
+            <label for="email">E-Mail</label>
+            <input type="email" placeholder="EMAIL" id="email">
+        </div>
+        <div>
+            <label for="pw">password</label>
+            <input type="password" placeholder="PASSWORD" id="pw">
+        </div>
+        <div>
+            <label for="no">Nomor TELEPON</label>
+            <input type="number" placeholder="NUMBER" id="no">
+        </div>
+        <div>
+            <label for="warna">warna</label>
+            <input type="color" id="warna">
+        </div>
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
